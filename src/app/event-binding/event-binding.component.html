@@ -1,7 +1,7 @@
 <div class="component-title">Event Binding</div>
 <div class="content-container">
-    <button (click)="onButtonClick($event)">Generate HTML</button>  
-    
+    <button (click)="onButtonClick($event)">Generate HTML</button>
+
     <br><br>
     <div *ngFor="let item of clickArray">{{ item }}</div>
     <br><br>
@@ -10,47 +10,104 @@
     Focus event binding: <input type="text" (focus)="onFocus($event)">
     <br><br>
     Blur event binding: <input type="text" (blur)="onBlur($event)">
+    <br><br><br><br>
+
+    <div>
+      // Full list of Angular Events
+      <ul>
+        <li>(click)="myFunction()"</li>
+        <li>(dblclick)="myFunction()"</li>
+        <li>(submit)="myFunction()"</li>
+        <li>(blur)="myFunction()"</li>
+        <li>(focus)="myFunction()"</li>
+        <li>(scroll)="myFunction()"</li>
+        <li>(cut)="myFunction()"</li>
+        <li>(copy)="myFunction()"</li>
+        <li>(paste)="myFunction()"</li>
+        <li>(keyup)="myFunction()"</li>
+        <li>(keypress)="myFunction()"</li>
+        <li>(keydown)="myFunction()"</li>
+        <li>(mouseup)="myFunction()"</li>
+        <li>(mousedown)="myFunction()"</li>
+        <li>(mouseenter)="myFunction()"</li>
+        <li>(drag)="myFunction()"</li>
+        <li>(drop)="myFunction()"</li>
+        <li>(dragover)="myFunction()"</li>
+      </ul>
+    </div>
     <br><br>
-    <!-- // Full list of Angular Events
-(click)="myFunction()"      
-(dblclick)="myFunction()"   
-(submit)="myFunction()"
-(blur)="myFunction()"  
-(focus)="myFunction()" 
-(scroll)="myFunction()"
-(cut)="myFunction()"
-(copy)="myFunction()"
-(paste)="myFunction()"
-(keyup)="myFunction()"
-(keypress)="myFunction()"
-(keydown)="myFunction()"
-(mouseup)="myFunction()"
-(mousedown)="myFunction()"
-(mouseenter)="myFunction()"
-(drag)="myFunction()"
-(drop)="myFunction()"
-(dragover)="myFunction()" -->
+    <div>
+      Event Types for functions receiving events
+      <ul>
+        <li>MouseEvent</li>
+        <ul>
+          <li>click</li>
+          <li>mouseup</li>
+          <li>mouseleave</li>
+          <li>mouseover</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>FocusEvent</li>
+        <ul>
+          <li>focus</li>
+          <li>blur</li>
+          <li>focusin</li>
+          <li>focusout</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>TouchEvent</li>
+        <ul>
+          <li>touchstart</li>
+          <li>touchmove</li>
+          <li>touchcancel</li>
+          <li>touchend</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>DragEvent</li>
+        <ul>
+          <li>drag</li>
+          <li>drop</li>
+          <li>dragend</li>
+          <li>dragover</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>KeyboardEvent</li>
+        <ul>
+          <li>keypress</li>
+          <li>keyup</li>
+          <li>keydown</li>
+        </ul>
+      </ul>
+
+      <ul>
+        <li>Event(Generic)</li>
+        <ul>
+          <li>close</li>
+          <li>change</li>
+          <li>invalid</li>
+          <li>play</li>
+          <li>reset</li>
+          <li>scroll</li>
+          <li>select</li>
+          <li>submit</li>
+          <li>toggle</li>
+          <li>waiting</li>
+        </ul>
+      </ul>
+
+    </div>
 
 
-<!-- | MouseEvent | FocusEvent |  TouchEvent | DragEvent | KeyboardEvent |
-|:----------:|:----------:|:-----------:|:---------:|:-------------:|
-|    click   |    focus   |  touchstart |    drag   |    keypress   |
-|   mouseup  |    blur    |  touchmove  |    drop   |     keyup     |
-| mouseleave |   focusin  | touchcancel |  dragend  |    keydown    |
-|  mouseover |  focusout  |   touchend  |  dragover |               | -->
+    <div class="all-event-text">All Typescript events and types listed in commented out code below - 94 Total</div>
 
-<!-- The generic Event is associated to:
-
-    close
-    change
-    invalid
-    play
-    reset
-    scroll
-    select
-    submit
-    toggle
-    waiting -->
 
     <!-- If you dig in Typescript's repository, dom.generated.d.ts provides a global events interface (credit goes to Eric's answer) where you may find all the event handlers mappings at line 5419:
 

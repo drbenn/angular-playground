@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./attribute-binding.component.scss']
 })
 export class AttributeBindingComponent {
-
+  draggableBoolean: boolean = true;
 }

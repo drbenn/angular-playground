@@ -1,1 +1,26 @@
-<p>class-style-binding works!</p>
+<div class="component-title">Class and Style Binding</div>
+<div class="content-container">
+  <span [style.text-decoration]="'underline'">Class Binding</span>
+  <br><br>
+  <div [class.sale]="onSale">'sale' class activated by onSale boolean</div>
+  <br><br>
+  <div [class]="classExpression">multiple classes called by string expression</div>
+  <br><br>
+  <div [class]="arrayExpression">multiple classes by array</div>
+  <br><br>
+  <div [class]="objectExpression">multiple classes by object, classes activated by boolean</div>
+
+
+
+  <br><br><br><br>
+  <span [style.text-decoration]="'underline'">Style Binding</span>
+  <br><br>
+  <div [style.background-color]="'goldenrod'" [style.width]="'50%'">Single style binding for background color and width using inline strings</div>
+  <br><br>
+  <div [style.background-color]="selectedBgColor">Single style binding for background color using variable</div>
+  <br><br>
+  <div [style]="styleExpression">Mutliple style binding using variable</div>
+
+
+</div>
+
