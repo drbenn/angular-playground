@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./string-interpolation.component.scss']
 })
 export class StringInterpolationComponent {
+  words: string = 'These words come from a variable/property of the class that is a string';
 
 }

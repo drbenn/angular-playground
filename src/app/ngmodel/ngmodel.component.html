@@ -1,0 +1,18 @@
+<div class="component-title">ngModel</div>
+<div class="content-container">
+    Requires addition of FormsModule in app.module
+</div>
+
+<div class="content-container">
+    <input [(ngModel)]="name" #ctrl="ngModel" required>
+
+    <p>Active Value: {{ name }}</p>
+    <p>Valid: {{ ctrl.valid }}</p>
+    <p>Stored Name: {{ storedName }}</p>
+
+    <button (click)="setValue()">Set Value as Shaq</button>
+    <br><br>
+    <button (click)="clearValue()">Clear Value</button>
+    <br><br>
+    <button (click)="storeValue()">Store Value</button>
+</div>

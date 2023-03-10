@@ -10,3 +10,32 @@ body {
   font-weight: 600;
   margin-top: 3rem;
 }
+
+.content-container {
+  margin-top: 2rem;
+  width: 80%;
+  min-width: 40rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #7a7a7a;
+  transition: 100ms;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #7a7a7a;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(255, 37, 99);
+  transition: 100ms;
+  cursor: default;
+}
+
+a:active {
+  text-decoration: none;
+  color: white;
+}
