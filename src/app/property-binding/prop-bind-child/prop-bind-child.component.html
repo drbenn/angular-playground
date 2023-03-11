@@ -5,4 +5,10 @@
     input from parent 'parentVar' = {{ parentVar }}
     <br><br>
     input from parent 'parentObj' = {{ parentObj | json }}
+    <br><br><br>
+
+    <label for="item-input">Add an item:</label>
+    <!-- #newItem is powerful, and is a html side variable of the input that can then be referenced as newItem.value and sent to function in components ts -->
+    <input type="text" id="item-input" #newItem>
+    <button type="button" (click)="addNewItem(newItem.value)">Add to parent's list</button>
 </div>

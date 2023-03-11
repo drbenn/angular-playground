@@ -1,12 +1,23 @@
 <div class="component-title">Property Binding</div>
 <div class="content-container">
-    
+    @Input() sends data from parent to child
+    <br><br><br><br><br>
+    @Output() sends data from child to parent
+    <br><br>
+    {{ items }} - String interpolation of items array only provides onInit values
+    <br><br>
+    To update asynchronously, use ngFor and when new item added it will be iterated over and added to the dom
+    <ul>
+      <li *ngFor="let item of items">{{ item }}</li>
+    </ul>
 </div>
 
-<app-prop-bind-child 
+<app-prop-bind-child
     [parentString]="'WHAMMO'"
     [parentVar]="varToChild"
     [parentObj]="objToChild"
+
+    (newItemEvent)="addItemFromChild($event)"
     >
 
 </app-prop-bind-child>
