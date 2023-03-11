@@ -15,6 +15,12 @@
   <br><br><br><br>
   <span [style.text-decoration]="'underline'">Style Binding</span>
   <br><br>
+  <p>[ngStyle] shouldbe used instead of [style] binding because [ngStyle] is an Angular directive that gives flexibility to set multiple attributes in an object, whereas [style] is a regular HTML property to which you can only bind values one by one.</p>
+  <br><br>
+  <div [ngStyle]="{'font-family': 'Georgia', 'font-size': '2rem', 'background-color': 'navy', 'color': 'orangered', 'padding': '1rem', 'max-width': '50rem' }">[ngStyle] with multiple properties</div>
+  <br><br>
+  <div [ngStyle]="ngStyleObject">[ngStyle] using object variable</div>
+  <br><br>
   <div [style.background-color]="'goldenrod'" [style.width]="'50%'">Single style binding for background color and width using inline strings</div>
   <br><br>
   <div [style.background-color]="selectedBgColor">Single style binding for background color using variable</div>

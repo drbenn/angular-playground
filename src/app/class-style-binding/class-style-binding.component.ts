@@ -11,6 +11,7 @@ export class ClassStyleBindingComponent {
   arrayExpression: string[] = ['dog', 'bone'];
   objectExpression: {} = {"cemetary-bg": true, "frail-size": true, "white-text": true, "booyah-padding":true }
 
+  ngStyleObject: {} = {'font-family': 'Georgia', 'font-size': '2rem', 'background-color': 'lime', 'color': 'blue', 'padding': '1rem'}
 
   selectedBgColor: string = 'salmon';
   styleExpression: string = 'width: 80%; height: 100px; background-Color: cornflowerblue; border: 2px dashed black; font-size: 1.5rem; color: grey'
