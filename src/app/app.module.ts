@@ -13,6 +13,7 @@ import { NgmodelComponent } from './ngmodel/ngmodel.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ClassStyleBindingComponent } from './class-style-binding/class-style-bi
     NgmodelComponent,
     EventBindingComponent,
     AttributeBindingComponent,
-    ClassStyleBindingComponent
+    ClassStyleBindingComponent,
+    TemplateVariablesComponent
   ],
   imports: [
     BrowserModule,
