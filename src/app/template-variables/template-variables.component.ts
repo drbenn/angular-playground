@@ -9,4 +9,11 @@ export class TemplateVariablesComponent {
   callPhone(number: string | number) {
     alert(`number ${number} was entered into input and passed as template variable for use in button calling this function`)
   }
+
+  heroes: any[] = [
+    {name:'Batman'},
+    {name:'Superman'},
+    {name: 'Catman'},
+    {name: 'Dr. Strange'}
+  ]
 }

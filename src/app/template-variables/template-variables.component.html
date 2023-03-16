@@ -3,4 +3,14 @@
     <h2>Declaring variable with #</h2>
     <p><input #phone placeholder="phone number" /></p>
     <button type="button" (click)="callPhone(phone.value)">Call</button>
+
+    <br><br><br><br>
+
+    <h2>Template Variable with index within ng-template</h2>
+    <ul>
+      <ng-template ngFor let-hero let-i="index" [ngForOf]="heroes">
+        <li>Hero number {{i}}: {{hero.name}}
+      </ng-template>
+    </ul>
+
 </div>

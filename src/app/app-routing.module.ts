@@ -7,6 +7,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { NgmodelComponent } from './ngmodel/ngmodel.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
+import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 
 const routes: Routes = [
   {path:'commands', component: CommandsComponent},
@@ -16,6 +17,8 @@ const routes: Routes = [
   {path:'class-style-binding', component: ClassStyleBindingComponent},
   {path:'attribute-binding', component: AttributeBindingComponent},
   {path:'ngmodel', component: NgmodelComponent},
+  {path:'template-variables', component: TemplateVariablesComponent},
+
 ];
 
 @NgModule({
