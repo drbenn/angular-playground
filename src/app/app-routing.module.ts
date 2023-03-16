@@ -4,9 +4,13 @@ import { AttributeBindingComponent } from './attribute-binding/attribute-binding
 import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
 import { CommandsComponent } from './commands/commands.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgmodelComponent } from './ngmodel/ngmodel.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { StringInterpolationComponent } from './string-interpolation/string-interpolation.component';
+import { SvgTemplatesComponent } from './svg-templates/svg-templates.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 
 const routes: Routes = [
@@ -18,6 +22,12 @@ const routes: Routes = [
   {path:'attribute-binding', component: AttributeBindingComponent},
   {path:'ngmodel', component: NgmodelComponent},
   {path:'template-variables', component: TemplateVariablesComponent},
+  {path:'svg-templates', component: SvgTemplatesComponent},
+  {path:'ng-container', component: NgContainerComponent},
+  {path:'ng-content', component: NgContentComponent},
+  {path:'ng-template', component: NgTemplateComponent},
+
+
 
 ];
 

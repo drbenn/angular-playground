@@ -1,0 +1,73 @@
+<div class="component-title">ng-template</div>
+<div class="content-container">
+  <p><a href="https://flexiple.com/angular/ng-template/">Description take from here</a></p>
+
+  <p>ng-template is an Angular element that is used for rendering HTML in a template. However, it is not rendered directly on DOM. If you include an ng-template tag to a template, the tag and the content inside it will be replaced by comment upon render.</p>
+
+
+  <p>ng-template does not display below because no ngIf, ngFor or ngSwitch used...ngTemplate must use one of those directives</p>
+
+  <p>Now, this might seem pointless to you - why use a tag when its contents don't render? However, note that ng-template is always used along with structural derivatives such as ngIf, nfFor, and ngSwitch. It is used for grouping content that is not rendered, but that can be used in other parts of your code.</p>
+
+  <p class="author-says">My Comment: So in essence, if you are using a div with ngIf, ngFor or ngSwitch, you are in turn using ng-template</p>
+  <ng-template>
+    <p>Ng Template contents</p>
+  </ng-template>
+
+
+  <p><strong>ng-content with *ngIf</strong></p>
+
+  <div *ngIf="ngIfexample" class="display-hello">Hello World!</div>
+  <ng-template [ngIf]="ngIfexample">
+      <div class="desplay-hello">Hello world!</div>
+  </ng-template>
+  <br><br>
+
+
+
+  <p><strong>ng-content with *ngFor</strong></p>
+
+  <div
+     *ngFor="let order of orders">
+  {{order.id}}
+  </div>
+  <br>
+  <ng-template
+    ngFor let-order [ngForOf]="orders">
+  <div>{{order.id}}</div>
+  </ng-template>
+  <br><br>
+
+
+
+
+  <p><strong>ng-content with *ngSwitch</strong></p>
+
+  <div [ngSwitch] = "day">
+    <div *ngSwitchCase = '0'>Today is Sunday! You deserve a break</div>
+    <div *ngSwitchCase = '1'><h3>Today is Monday, Hope you have productive Week</h3></div>
+    <div *ngSwitchCase = '2'><h3>Today is Tuesday, Smash your Goals</h3></div>
+    <div *ngSwitchCase = '3'><h3>Today is Wednesday, You're already half way through</h3></div>
+    <div *ngSwitchCase = '4'><h3>Today is Thursday, It's like Friday Lite</h3></div>
+    <div *ngSwitchCase = '5'><h3>Today is Friday, TGIF!!!</h3></div>
+    <div *ngSwitchCase = '6'><h3>Today is Saturday, Let's Party!! :) </h3></div>
+    <div *ngSwitchDefault>Uh oh! Somethings wrong</div>
+  </div>
+
+  <div [ngSwitch]="dayAgain">
+    <ng-template *ngSwitchCase="1">
+      <p>Today is Sunday! You deserve a break</p>
+    </ng-template>
+    <ng-template [ngSwitchCase]="2">
+      <p>Today is Monday, Hope you have productive Week</p>
+    </ng-template>
+    <ng-template [ngSwitchCase]="5">
+      <p>Today is Friday, TGIF!!!</p>
+    </ng-template>
+    <ng-template [ngSwitchDefault]>
+      <p>Uh oh! Somethings wrong</p>
+    </ng-template>
+  </div>
+
+
+</div>

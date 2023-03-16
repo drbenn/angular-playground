@@ -14,6 +14,11 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { AttributeBindingComponent } from './attribute-binding/attribute-binding.component';
 import { ClassStyleBindingComponent } from './class-style-binding/class-style-binding.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
+import { SvgTemplatesComponent } from './svg-templates/svg-templates.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { NgTemplateComponent } from './ng-template/ng-template.component';
+import { NgContentChildComponent } from './ng-content/ng-content-child/ng-content-child.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { TemplateVariablesComponent } from './template-variables/template-variab
     EventBindingComponent,
     AttributeBindingComponent,
     ClassStyleBindingComponent,
-    TemplateVariablesComponent
+    TemplateVariablesComponent,
+    SvgTemplatesComponent,
+    NgContainerComponent,
+    NgContentComponent,
+    NgTemplateComponent,
+    NgContentChildComponent
   ],
   imports: [
     BrowserModule,
