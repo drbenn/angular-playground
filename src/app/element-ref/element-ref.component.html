@@ -1,0 +1,28 @@
+<div class="component-title">Element Ref</div>
+<div class="content-container">
+
+<p>
+  A wrapper around a native element inside of a View.
+</p>
+
+<p [ngStyle]="{color: 'red'}">
+  Permitting direct access to the DOM can make your application more vulnerable to XSS attacks. Carefully review any use of ElementRef in your code.
+</p>
+
+<p [ngStyle]="{color: 'red'}">
+  <strong>{{ 'Use with caution' | uppercase }}</strong>
+</p>
+
+<p [ngStyle]="{color: 'red'}">
+  Use this API as the last resort when direct access to DOM is needed. Use templating and data-binding provided by Angular instead. Alternatively you can take a look at Renderer2 which provides API that can safely be used even when direct access to native elements is not supported.
+</p>
+
+<p [ngStyle]="{color: 'red'}">
+  Relying on direct DOM access creates tight coupling between your application and rendering layers which will make it impossible to separate the two and deploy your application into a web worker.
+</p>
+
+<p class="author-says">
+  My note: USE TEMPLATEREF AND/OR VIEWCONTAINERREF INSTEAD(as they contain element ref as properties), only use elementRef if nothing else works.
+</p>
+
+</div>

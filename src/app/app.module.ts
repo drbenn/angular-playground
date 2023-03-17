@@ -26,6 +26,8 @@ import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { ViewContainerRefComponent } from './view-container-ref/view-container-ref.component';
 import { HostListenerComponent } from './host-listener/host-listener.component';
 import { UnlessDirective } from './basic-custom-structural-directive/unless.directive';
+import { ElementRefComponent } from './element-ref/element-ref.component';
+import { RendererTwoComponent } from './renderer-two/renderer-two.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { UnlessDirective } from './basic-custom-structural-directive/unless.dire
     TemplateRefComponent,
     ViewContainerRefComponent,
     HostListenerComponent,
-    UnlessDirective
+    UnlessDirective,
+    ElementRefComponent,
+    RendererTwoComponent
   ],
   imports: [
     BrowserModule,

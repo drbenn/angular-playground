@@ -3,4 +3,20 @@
 
 <p>TemplateRef helps you get to the ng-template contents and ViewContainerRef accesses the view container.</p>
 
+<p>
+  Represents an embedded template that can be used to instantiate embedded views. To instantiate embedded views based on a template, use the ViewContainerRef method createEmbeddedView().
+</p>
+
+<p>
+  <strong>Includes elementRef in its class/constructor, so use templateRef instead of vulnerable ElementRef</strong>
+</p>
+
+<p>
+  Access a TemplateRef instance by placing a directive on an ng-template element (or directive prefixed with *). The TemplateRef for the embedded view is injected into the constructor of the directive, using the TemplateRef token.
+</p>
+
+<p class="author-says">
+  My note: USE INSTEAD OF ELEMENTREF - See Basic Custom Structural Directive for practical usage.
+</p>
+
 </div>
