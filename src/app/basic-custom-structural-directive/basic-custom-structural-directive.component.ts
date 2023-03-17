@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./basic-custom-structural-directive.component.scss']
 })
 export class BasicCustomStructuralDirectiveComponent {
+  condition = false;
 
 }

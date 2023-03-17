@@ -25,6 +25,7 @@ import { BasicCustomStructuralDirectiveComponent } from './basic-custom-structur
 import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { ViewContainerRefComponent } from './view-container-ref/view-container-ref.component';
 import { HostListenerComponent } from './host-listener/host-listener.component';
+import { UnlessDirective } from './basic-custom-structural-directive/unless.directive';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { HostListenerComponent } from './host-listener/host-listener.component';
     BasicCustomStructuralDirectiveComponent,
     TemplateRefComponent,
     ViewContainerRefComponent,
-    HostListenerComponent
+    HostListenerComponent,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,

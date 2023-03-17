@@ -9,7 +9,7 @@
 
   <p>Now, this might seem pointless to you - why use a tag when its contents don't render? However, note that ng-template is always used along with structural derivatives such as ngIf, nfFor, and ngSwitch. It is used for grouping content that is not rendered, but that can be used in other parts of your code.</p>
 
-  <p class="author-says">My Comment: So in essence, if you are using a div with ngIf, ngFor or ngSwitch, you are in turn using ng-template</p>
+  <p class="author-says">My Comment: So in essence, if you are using a div with ngIf, ngFor or ngSwitch, you are in turn using ng-template (because a div with *ngIf in actuality just wraps the div with an ng-template with [ngIf])</p>
   <ng-template>
     <p>Ng Template contents</p>
   </ng-template>

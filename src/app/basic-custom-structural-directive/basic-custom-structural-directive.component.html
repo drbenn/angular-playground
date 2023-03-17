@@ -1,6 +1,31 @@
 <div class="component-title">Basic Custom Structural Directive</div>
 <div class="content-container">
 
-
-
+<p>
+  ***Lots more to learn - see <a href="https://angular.io/guide/structural-directives">Angular io Directives docs</a>
+</p>
+<p>
+  NgIf displays the template content when the condition is true.<strong>The custom UnlessDirective displays the content when the condition is false.</strong>
+</p>
+<p class="author-says">
+  My note: The boolean value of var condition in the view component is passed to the appUnless directive via directive selector and @Input in directive set as name.
+</p>
+<p class="author-says">
+  Pretty much much when condition = false the directive accepts the template(contents of *appUnless paragraph text) into the viewContainer, otherwise it clears the template.
+</p>
+<p *appUnless="condition">Show this sentence unless the condition is true.</p>
+<p *appUnless="!condition" class="unless b">
+  (B) Although the condition is true,
+  this paragraph is displayed because appUnless is set to false.
+</p>
+<p>
+  The condition is currently
+  <span [ngClass]="{ 'a': !condition, 'b': condition, 'unless': true }">{{condition}}</span>.
+  <button
+    type="button"
+    (click)="condition = !condition"
+    [ngClass] = "{ 'a': condition, 'b': !condition }" >
+    Toggle condition to {{condition ? 'false' : 'true'}}
+  </button>
+</p>
 </div>
