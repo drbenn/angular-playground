@@ -1,0 +1,26 @@
+<div class="component-title">Host Listener</div>
+<div class="content-container">
+  <p>
+    Decorator that declares a DOM event to listen for, and provides a handler method to run when that event occurs.
+  </p>
+  <p>
+    Angular invokes the supplied handler method when the host element emits the specified event, and updates the bound element with the result.
+  </p>
+
+  <p class="author-says">
+    My comment: so host listener listens to an event, like hitting the enter key below, <strong>or more likely, a click event...kind of exactly like a (click) listener</strong>
+  </p>
+  <div>
+    <h1>
+      Hello, you have pressed enter {{counter}} number of times!
+    </h1>
+
+    <h4>
+      Press enter key to increment the counter.
+    </h4>
+
+    <button (click)="resetCounter()">Reset Counter</button>
+  </div>
+
+
+</div>

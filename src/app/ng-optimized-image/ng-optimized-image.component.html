@@ -1,0 +1,26 @@
+<div class="component-title">ng-optimized-image(UNDER CONSTRUCTION)</div>
+<div class="content-container">
+
+  <p><strong>** Still need to figure out responsive images</strong></p>
+
+  <p>Must add NgOptimize to imports in app.module from '@angular/common'; </p>
+
+  <p>width and height are required in html img tag</p>
+
+<div>
+  <h3>high priority/ eager loading</h3>
+  <img ngSrc="assets/images/img1-640x426.jpg" width="640" height="426" priority>
+</div>
+
+<div class="">
+  <h3>lazy loading is default</h3>
+
+  <img ngSrc="assets/images/img2-640x426.jpg" width="640" height="426">
+</div>
+
+<div class="">
+  <h3>lazy loading is default, but can still add for clarity</h3>
+  <img ngSrc="assets/images/img3-640x960.jpg" width="640" height="960" loading="lazy">
+</div>
+
+</div>

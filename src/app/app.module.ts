@@ -19,6 +19,12 @@ import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { NgContentChildComponent } from './ng-content/ng-content-child/ng-content-child.component';
+import { NgOptimizedImageComponent } from './ng-optimized-image/ng-optimized-image.component';
+import { NgOptimizedImage } from '@angular/common';
+import { BasicCustomStructuralDirectiveComponent } from './basic-custom-structural-directive/basic-custom-structural-directive.component';
+import { TemplateRefComponent } from './template-ref/template-ref.component';
+import { ViewContainerRefComponent } from './view-container-ref/view-container-ref.component';
+import { HostListenerComponent } from './host-listener/host-listener.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +43,18 @@ import { NgContentChildComponent } from './ng-content/ng-content-child/ng-conten
     NgContainerComponent,
     NgContentComponent,
     NgTemplateComponent,
-    NgContentChildComponent
+    NgContentChildComponent,
+    NgOptimizedImageComponent,
+    BasicCustomStructuralDirectiveComponent,
+    TemplateRefComponent,
+    ViewContainerRefComponent,
+    HostListenerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgOptimizedImage
   ],
   providers: [],
   bootstrap: [AppComponent]

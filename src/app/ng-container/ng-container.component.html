@@ -1,11 +1,18 @@
 <div class="component-title">ng-container</div>
 <div class="content-container">
-  The Angular ng-container is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+  <p>
+    The Angular ng-container is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
+  </p>
+
+  <p>So, its good for adding conditional text, as seen below, text in strong is ngContainer ngIf</p>
+
 
   <p>
     I turned the corner
     <ng-container *ngIf="hero">
-      and saw {{hero.name}}. I waved
+      <strong>
+        and saw {{hero.name}}. I waved
+      </strong>
     </ng-container>
     and continued on my way.
   </p>

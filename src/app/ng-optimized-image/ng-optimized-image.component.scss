@@ -1,0 +1,9 @@
+.fill-opt-img {
+  height: 24rem;
+  width: 10rem;
+  border: 5px solid goldenrod;
+  position: "fixed"
+  img {
+    object-fit: contain;
+  }
+}
