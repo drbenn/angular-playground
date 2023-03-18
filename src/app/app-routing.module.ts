@@ -7,6 +7,7 @@ import { CommandsComponent } from './commands/commands.component';
 import { ElementRefComponent } from './element-ref/element-ref.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { HostListenerComponent } from './host-listener/host-listener.component';
+import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
 import { NgContainerComponent } from './ng-container/ng-container.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgOptimizedImageComponent } from './ng-optimized-image/ng-optimized-image.component';
@@ -40,7 +41,7 @@ const routes: Routes = [
   {path:'host-listener', component: HostListenerComponent},
   {path:'element-ref', component: ElementRefComponent},
   {path:'renderer-two', component: RendererTwoComponent},
-
+  {path:'intersection-observer', component: IntersectionObserverComponent},
 
 
 ];

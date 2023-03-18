@@ -1,0 +1,16 @@
+<div class="component-title">Intersection Observer</div>
+<div class="content-container">
+
+  <div *ngFor="let index of items"
+    class="big-pane"
+    appObserveElement
+    #intersection="intersection"
+    [class.example-card--is-intersecting]="intersection._isIntersecting"
+    (isIntersecting)="isIntersecting($event, index)"
+    [isContinuous]="true"
+    >
+    <p>Section {{index}}</p>
+  </div>
+
+
+</div>

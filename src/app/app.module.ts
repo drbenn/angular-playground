@@ -28,6 +28,8 @@ import { HostListenerComponent } from './host-listener/host-listener.component';
 import { UnlessDirective } from './basic-custom-structural-directive/unless.directive';
 import { ElementRefComponent } from './element-ref/element-ref.component';
 import { RendererTwoComponent } from './renderer-two/renderer-two.component';
+import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
+import { ObserveElementDirective } from './intersection-observer/observe-element.directive';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { RendererTwoComponent } from './renderer-two/renderer-two.component';
     HostListenerComponent,
     UnlessDirective,
     ElementRefComponent,
-    RendererTwoComponent
+    RendererTwoComponent,
+    IntersectionObserverComponent,
+    ObserveElementDirective
   ],
   imports: [
     BrowserModule,
