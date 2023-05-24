@@ -21,6 +21,8 @@ import { TemplateRefComponent } from './template-ref/template-ref.component';
 import { TemplateVariablesComponent } from './template-variables/template-variables.component';
 import { ViewContainerRefComponent } from './view-container-ref/view-container-ref.component';
 import { ViewChildComponent} from './view-child/view-child.component'
+import { ModulesComponent } from './modules/modules.component';
+import { LibrariesComponent } from './libraries/libraries.component';
 
 const routes: Routes = [
   {path:'commands', component: CommandsComponent},
@@ -44,6 +46,9 @@ const routes: Routes = [
   {path:'renderer-two', component: RendererTwoComponent},
   {path:'intersection-observer', component: IntersectionObserverComponent},
   {path:'view-child', component: ViewChildComponent},
+  {path:'modules', component: ModulesComponent},
+  {path:'libraries', component: LibrariesComponent},
+
 
 ];
 

@@ -1,0 +1,38 @@
+<div class="component-title">Libraries</div>
+<div class="content-container">
+    <p>
+        Ideas for Angular libraries:
+    </p>
+    <ul>
+        <li>A library of UI components that can be used to build web applications. This could include components for things like buttons, forms, tables, and charts.</li>
+        <li>A library of utility functions that can be used to perform common tasks, such as loading data from an API, validating user input, and formatting text.</li>
+        <li>A library of services that can be used to provide access to common resources, such as a database, a file system, or an API.</li>
+        <li>A library of directives that can be used to add custom behavior to elements in the DOM.</li>
+        <li>A library of pipes that can be used to transform data before it is displayed to the user.</li>
+    </ul>
+    
+    
+    <br><br><br>
+    <h3>I created a library of utilities functions doing the following...</h3>
+    <ol>
+        <li>'ng g library random-utilities', this also adds a project type of library to app-wide angular.json</li>
+        <li>Then I updated functions in random-utilties.service.ts...which surprise a library works like a service</li>
+        <li>build the service for use using 'ng build random-utilities'</li>
+        <li>npm i random-utilities</li>
+        <li>In this libraries component I used import RandomUtilitiesService from ...; at the top to use library functions like a service</li>
+
+    </ol>
+    <p>Capstring result: {{capString}}</p>
+    <p><button (click)="getYolo()">Also onclick YOLO Any will console log</button></p>
+    
+    <br><br><br>
+    <h3>I also created a compoentn library doing the following...</h3>
+    <ol>
+        <li>'ng g library bblue-button', this also adds a project type of library to app-wide angular.json</li>
+        <li>Then I navigated to projects/bblue-button/src/lib and created additional html and scss files...like a normal component</li>
+        <li>compiled and built the service for use using 'ng build bblue-button'</li>
+        <li>npm install bblue-button.....but erroring for some reason</li>
+        <!-- <lib-bblue-button></lib-bblue-button> -->
+    </ol>
+
+</div>

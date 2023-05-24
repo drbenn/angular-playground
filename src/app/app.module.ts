@@ -33,6 +33,8 @@ import { ObserveElementDirective } from './intersection-observer/observe-element
 import { ViewChildComponent } from './view-child/view-child.component';
 import { RedDirective } from './basic-custom-structural-directive/red.directive';
 import { MessageMagicDirective } from './basic-custom-structural-directive/message-magic.directive';
+import { ModulesComponent } from './modules/modules.component';
+import { LibrariesComponent } from './libraries/libraries.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,9 @@ import { MessageMagicDirective } from './basic-custom-structural-directive/messa
     ObserveElementDirective,
     ViewChildComponent,
     RedDirective,
-    MessageMagicDirective
+    MessageMagicDirective,
+    ModulesComponent,
+    LibrariesComponent
   ],
   imports: [
     BrowserModule,
