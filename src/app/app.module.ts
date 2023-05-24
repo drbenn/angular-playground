@@ -30,6 +30,9 @@ import { ElementRefComponent } from './element-ref/element-ref.component';
 import { RendererTwoComponent } from './renderer-two/renderer-two.component';
 import { IntersectionObserverComponent } from './intersection-observer/intersection-observer.component';
 import { ObserveElementDirective } from './intersection-observer/observe-element.directive';
+import { ViewChildComponent } from './view-child/view-child.component';
+import { RedDirective } from './basic-custom-structural-directive/red.directive';
+import { MessageMagicDirective } from './basic-custom-structural-directive/message-magic.directive';
 
 @NgModule({
   declarations: [
@@ -58,7 +61,10 @@ import { ObserveElementDirective } from './intersection-observer/observe-element
     ElementRefComponent,
     RendererTwoComponent,
     IntersectionObserverComponent,
-    ObserveElementDirective
+    ObserveElementDirective,
+    ViewChildComponent,
+    RedDirective,
+    MessageMagicDirective
   ],
   imports: [
     BrowserModule,
