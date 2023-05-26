@@ -1,0 +1,33 @@
+<div class="component-title">Reactive Forms</div>
+<div class="content-container">
+    <p>
+        Uses FormControl(individual fields) and FormGroups(Groups of FormControls) and can include specialized validators
+    </p>
+    <p>
+        Need to import ReactiveFormsModule in app.module
+    </p>
+
+
+    <div>
+        Basic form control:
+        <br>
+        basic: <input type="text" [formControl]="simple">
+    </div>
+    <br><br><br>
+    <div>
+    Form Group:
+    <br>
+    <form [formGroup]="aForm" (ngSubmit)="onFormSubmit()">
+        Favorite saying: <input type="text" formControlName="saying">
+        <br><br>
+        Favorite digit: <input type="number" formControlName="digit">
+        <br><br>
+        Favorite colour: <input type="color" formControlName="colour">
+        <button type="submit">Submit</button>
+
+    </form>
+
+    </div>
+
+
+</div>

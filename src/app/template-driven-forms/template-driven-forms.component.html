@@ -1,0 +1,17 @@
+<div class="component-title">Template Driven Forms</div>
+<div class="content-container">
+    <p>
+        Template driven forms are pretty much just adding an input to the html and using two way binding ngModel to update a property in ts
+    </p>
+    <div>
+        Favorite Word: <input type="text" [(ngModel)]="word">
+        <br><br>
+        Favorite Number: <input type="number" [(ngModel)]="number">
+        <br><br>
+        Favorite Color: <input type="color" [(ngModel)]="color">
+        <br><br>
+        Favorite Password: <input type="password" [(ngModel)]="password">
+    </div>
+    <br><br><br><br>
+    <button (click)="seeValues()">Check Values</button>
+</div>

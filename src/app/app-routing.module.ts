@@ -23,6 +23,8 @@ import { ViewContainerRefComponent } from './view-container-ref/view-container-r
 import { ViewChildComponent} from './view-child/view-child.component'
 import { ModulesComponent } from './modules/modules.component';
 import { LibrariesComponent } from './libraries/libraries.component';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 const routes: Routes = [
   {path:'commands', component: CommandsComponent},
@@ -48,6 +50,9 @@ const routes: Routes = [
   {path:'view-child', component: ViewChildComponent},
   {path:'modules', component: ModulesComponent},
   {path:'libraries', component: LibrariesComponent},
+  {path:'td-forms', component: TemplateDrivenFormsComponent},
+  {path:'reactive-forms', component: ReactiveFormsComponent},
+
 
 
 ];

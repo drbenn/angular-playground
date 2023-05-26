@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,6 +36,8 @@ import { RedDirective } from './basic-custom-structural-directive/red.directive'
 import { MessageMagicDirective } from './basic-custom-structural-directive/message-magic.directive';
 import { ModulesComponent } from './modules/modules.component';
 import { LibrariesComponent } from './libraries/libraries.component';
+import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 
 @NgModule({
   declarations: [
@@ -68,12 +71,15 @@ import { LibrariesComponent } from './libraries/libraries.component';
     RedDirective,
     MessageMagicDirective,
     ModulesComponent,
-    LibrariesComponent
+    LibrariesComponent,
+    TemplateDrivenFormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgOptimizedImage
   ],
   providers: [],
